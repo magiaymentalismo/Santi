@@ -20,57 +20,7 @@ except Exception:
 # ===================== CONFIG ===================== #
 
 DINATICKET_EVENTS = {
-    "Escondido": "https://www.dinaticket.com/es/provider/20073/event/4919204",
-    "Oniria": "https://www.dinaticket.com/es/provider/20073/event/4940326",
-}
-
-ONEBOX_EVENTS = {
-    "Escalera": "https://entradas.laescaleradejacob.es/laescaleradejacob/events/56109",
-}
-
-ONEBOX_FALLBACK_SELECTS = {
-    "https://entradas.laescaleradejacob.es/laescaleradejacob/events/56109": [
-        {
-            "url": "https://entradas.laescaleradejacob.es/laescaleradejacob/select/2877829",
-            "fecha_iso": "2026-06-06",
-            "hora": "23:00",
-        },
-        {
-            "url": "https://entradas.laescaleradejacob.es/laescaleradejacob/select/2877830",
-            "fecha_iso": "2026-06-13",
-            "hora": "23:00",
-        },
-        {
-            "url": "https://entradas.laescaleradejacob.es/laescaleradejacob/select/2889698",
-            "fecha_iso": "2026-06-20",
-            "hora": "23:00",
-        },
-        {
-            "url": "https://entradas.laescaleradejacob.es/laescaleradejacob/select/2904421",
-            "fecha_iso": "2026-06-07",
-            "hora": "21:00",
-        },
-        {
-            "url": "https://entradas.laescaleradejacob.es/laescaleradejacob/select/2904422",
-            "fecha_iso": "2026-06-14",
-            "hora": "21:00",
-        },
-        {
-            "url": "https://entradas.laescaleradejacob.es/laescaleradejacob/select/2904423",
-            "fecha_iso": "2026-06-21",
-            "hora": "21:00",
-        },
-        {
-            "url": "https://entradas.laescaleradejacob.es/laescaleradejacob/select/2904452",
-            "fecha_iso": "2026-06-19",
-            "hora": "20:00",
-        },
-    ],
-}
-
-FEVER_URLS = {
-    "Miedo": "https://feverup.com/m/290561",
-    "Disfruta": "https://feverup.com/m/159767",
+    "Escondido": "https://www.dinaticket.com/es/provider/20073/event/4951866",
 }
 
 ABONO_URL = "https://compras.abonoteatro.com/?pagename=espectaculo&eventid=23816"
