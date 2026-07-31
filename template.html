@@ -250,12 +250,6 @@
       color: var(--accent-red);
       text-decoration: line-through;
     }
-
-    .abono-chip {
-      font-size: 11px;
-      padding: 4px 8px;
-      border-radius: 6px;
-    }
   </style>
 </head>
 
@@ -330,7 +324,7 @@
       rows = rows.map(r => ({
         fecha_label: r[0], hora: r[1],
         vendidas: r[2], fecha_iso: r[3],
-        cap: r[4], stock: r[5], abono: r[6]
+        cap: r[4], stock: r[5]
       }));
 
       rows.sort((a, b) => (a.fecha_iso + a.hora).localeCompare(b.fecha_iso + b.hora));
@@ -351,12 +345,6 @@
           r.vendidas >= 10 ? "gold" :
             r.vendidas >= 1 ? "green" : "gray";
 
-        let abonoHTML = "";
-        if (active === "Escondido" && r.abono) {
-          if (r.abono === "venta") abonoHTML = `<div class="chip green abono-chip">Abono: Disponible</div>`;
-          if (r.abono === "agotado") abonoHTML = `<div class="chip sold abono-chip">Abono: Agotado</div>`;
-        }
-
         const div = document.createElement("div");
         div.className = "item";
         div.innerHTML = `
@@ -368,7 +356,6 @@
             <div class="chip ${chip}">
               ${active === "Escondido" ? `${r.vendidas} / ${r.cap} · Quedan ${r.stock}` : `Vendidas: ${r.vendidas}`}
             </div>
-            ${abonoHTML}
           </div>`;
         cont.appendChild(div);
       }
