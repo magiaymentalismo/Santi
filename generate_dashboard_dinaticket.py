@@ -16,6 +16,7 @@ from bs4 import BeautifulSoup
 
 DINATICKET_EVENTS = {
     "teatroencantado": "https://teatroencantado.dinaticket.com/es/event/4924536",
+    "pontevedra": "https://www.dinaticket.com/es/provider/20845/event/4955437",
 }
 
 UA = {
